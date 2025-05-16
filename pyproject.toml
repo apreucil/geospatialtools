@@ -1,6 +1,5 @@
-# filepath: /ncrc/home2/Anthony.Preucil/apscratch/HydroBlocks/geospatialtools/pyproject.toml
 [build-system]
-requires = ["setuptools>=61.0", "wheel", "numpy", "scipy>=1.10.0"]
+requires = ["setuptools>=61.0", "wheel", "numpy"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -11,7 +10,4 @@ authors = [
     { name = "Your Name", email = "your.email@example.com" }
 ]
 license = { text = "MIT" }
-dependencies = ["numpy", "scipy"]
-
-[tool.setuptools]
-packages = ["geospatialtools"]
+dependencies = ["numpy"]

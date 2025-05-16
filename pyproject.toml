@@ -1,6 +1,6 @@
 # filepath: /ncrc/home2/Anthony.Preucil/apscratch/HydroBlocks/geospatialtools/pyproject.toml
 [build-system]
-requires = ["setuptools>=61.0", "wheel", "numpy"]
+requires = ["setuptools>=61.0", "wheel", "numpy", "scipy>=1.10.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -11,11 +11,7 @@ authors = [
     { name = "Your Name", email = "your.email@example.com" }
 ]
 license = { text = "MIT" }
-dependencies = ["numpy"]
+dependencies = ["numpy", "scipy"]
 
 [tool.setuptools]
 packages = ["geospatialtools"]
-
-[tool.setuptools.extension-modules]
-terrain_tools_fortran = { sources = ["src/planchon_2001.f90", "src/terrain_tools.f90"], extra_compile_args = ["-fPIC", "-Wall", "-pedantic", "-O3"] }
-upscaling_tools_fortran = { sources = ["src/upscaling_tools.f90"], extra_compile_args = ["-fPIC", "-Wall", "-pedantic", "-O3"] }
